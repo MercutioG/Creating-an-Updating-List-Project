@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#outerArea{
+    margin: 2rem;
+}
+
+#mainArea{
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    text-align: center;
+}
+
+.innerDiv{
+    width: 100%;
+    margin: 0.5rem;
+}
+
+.userTextInput{
+    border: 0;
+    border-bottom: 2px black solid;
+    outline: none;
+}
+
+.userTextInput:focus{
+    border-bottom: 2px lightslategray solid;
+}
+
+.innerElement{
+    margin: 0.2rem;
+}
+
+.inputMargin{
+    margin-right: 1.5rem;
+}
+
+.numberInput{
+    width: 2rem;
+}
+
+.accomodationDiv{
+    margin: 1rem 1.5rem 1rem 1.5rem;
+}
+
+#accomodationsArea{
+    display: flex;
+    justify-content: center;
+}
+
+redFont{
+    color: red;
+}
+
+button{
+    width: 6rem;
+    height: 2.2rem;
+
+    font-size: 1rem;
+    margin: auto;
+
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 685px) {
+    .innerDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .innerElement{
+        margin: auto;
+        margin-bottom: 1rem;
+        display: block;
+    }
+}

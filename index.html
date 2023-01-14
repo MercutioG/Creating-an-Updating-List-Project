@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset id="outerArea">
+        <form>
+            <div id="mainArea">
+                <div class="innerDiv innerElement">
+                    <h1>Passenger Travel Form</h1>
+                    <h5>(<redFont>*</redFont> is required)</h5>
+                </div>
+                <div class="innerDiv">
+                    <!-- First and Last Name -->
+                    <label for="firstNameBox">First Name<redFont>*</redFont>:</label>
+                    <input type="text" id="firstNameBox" name="firstNameBox" class="innerElement userTextInput inputMargin">
+                    
+                    <label for="lastNameBox">Last Name<redFont>*</redFont>:</label>
+                    <input type="text" id="lastNameBox" name="lastNameBox" class="innerElement userTextInput inputMargin">
+                </div>
+                <div class="innerDiv"> 
+                    <!-- Date of Birth -->
+                    <label for="birthDate">Date of Birth:<redFont>*</redFont></label>
+                    <input type="date" id="birthDate" name="birthDate" class="innerElement userTextInput">
+                </div>
+                <div class="innerDiv">
+                    <!-- City Info -->
+                    <label for="departFlight">Depating City<redFont>*</redFont>:</label>
+                    <input type="text" id="departFlight" name="departFlight" class="innerElement userTextInput inputMargin">
+
+                    <laberl for="arrivalFlight">Arrival City<redFont>*</redFont>:</label>
+                    <input type="text" id="arrivalFlight" name="arrivalFlight" class="innerElement userTextInput inputMargin">
+                </div>
+                <div class="innerDiv">
+                    <!-- Leaving and Returning -->
+                    <label for="leaveDate">Departing Date:<redFont>*</redFont></label>
+                    <input type="date" id="leaveDate" name="leaveDate" class="innerElement userTextInput inputMargin">
+
+                    <label for="arriveDate">Arriving Date:<redFont>*</redFont></label>
+                    <input type="date" id="arriveDate" name="arriveDate" class="innerElement userTextInput inputMargin">
+                </div>
+                <div class="innerDiv">
+                    <!-- Bag Info -->
+                    <label for="bagAmount">Number of Bags (20$ per):</label>
+                    <input type="number" placeholder="0" min="0" max="99" id="bagAmount" name="bagAmount" class="innerElement userTextInput numberInput">
+                </div>
+                <div class="innerDiv" id="accomodationsArea">
+                    <!-- Accomodations -->
+                    <div class="accomodationDiv">
+                        <p>Extras (10$ each):</p><hr>
+                        <label for="legRoom">Extra Leg Room</label>
+                        <input type="checkbox" id="legRoom" name="extras"><br>
+                        <label for="seatWindow">Window Seat</label>
+                        <input type="checkbox" id="seatWindow" name="extras"><br>
+                        <label for="headphones">Headphones</label>
+                        <input type="checkbox" id="headphones" name="extras"><br>
+                        <label for="extraFood">Extra Food</label>
+                        <input type="checkbox" id="extraFood" name="extras"><br>
+                    </div>
+                    <div class="accomodationDiv">
+                        <p>Meal Choice:</p><hr>
+                        <label for="chickenFood">Chicken</label>
+                        <input type="radio" id="chickenFood" name="foodOption"><br>
+                        <label for="fishFood">Fish</label>
+                        <input type="radio" id="fishFood" name="foodOption"><br>
+                        <label for="veggieFood">Vegetarian</label>
+                        <input type="radio" id="veggieFood" name="foodOption">
+                    </div>
+                </div>
+                <button onclick="createPassenger()" type="button">Help me</button>
+            </div>
+        </form>
+    </fieldset>
+    <script src="./script.js"></script>
+</body>
+</html>
